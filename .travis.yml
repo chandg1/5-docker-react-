@@ -18,11 +18,11 @@ script:
 deploy:
   procider: elasticbeanstalk
   region: "ap-south-1"
-  app: "frontend"
-  env: "Frontend-env"
+  app: "docker"
+  env: "Docker-env"
   bucket_name: "elasticbeanstalk-ap-south-1-381492171266"
-  bucket_path: "frontend"
+  bucket_path: "docker"
   on:
     branch: main
-  access_key_id: $Aws_Access_Key
+  access_key_id: $Aws_Access_Key 
   secret_access_key: $Aws_Secret_key
